@@ -1,7 +1,194 @@
+@media(max-width: 320px) {
 body {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 320px;
+}
+nav h1 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.5em;
+  color: #323232;
+  padding-top: 20px;
+}
+.hero-container {
+  max-width: 320px;
+  height: auto;
+  position: relative;
+  margin-left: 0px;
+  margin-top: 0px;
+  z-index: 0;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+.hero-container img {
+  width: 150%;
+  height: 100%;
+  margin-left: -80px;
+  background-position: center;
+  background-image: url(images/kats-hero-mobile.jpg);
+  background-attachment: fixed;
+}
+.hero-text {
+  position: absolute;
+  top: 20%;
+  left: 16%;
+  transform: translate(-50%, -50%);
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
 }
 
+#hero-text1 {
+  position: absolute;
+  top: 32%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 47px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+#hero-text2 {
+  position: absolute;
+  bottom: 49%;
+  right: -3%;
+  transform: translate(-50%, -50%);
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+#hero-cat {
+  position: absolute;
+  width: 69%;
+  height: auto;
+  margin-left: 50px;
+  margin-right: -72px;
+  margin-top: -299px;
+}
+
+.main h1 {
+  padding-top: 58px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px;
+}
+.main h3 {
+  margin-left: 29px;
+  margin-right: 29px;
+  font-family: 'PT Serif', serif;
+}
+
+.about {
+  background-color: #eeeeee;
+  padding: 25px;
+}
+.about h2 {
+  text-align: center;
+}
+.about p {
+  font-family: 'PT Serif', serif;
+  font-size: 1.0em;
+  line-height: 1.75em;
+  color: #323232;
+  margin-right: -4px;
+  margin-left: 3px;
+}
+.cat3 img {
+  max-width: 250px;
+  border-radius: 180px;
+  margin: 37px;
+
+}
+
+.contact {
+  background-color: #eeeeee;
+  margin-top: 8px;
+
+}
+
+.contact h3 {
+  text-align:left;
+  padding: 0 30 30 30;
+  font-family: 'PT Serif Regular';
+  font-size: 1em;
+  line-height: 2em;
+  color: #323232;
+}
+.contact1 h3 {
+  padding: -97px 39px 23px 42px;
+  margin-top: -32px;
+  margin-right: -33px;
+  font-family: 'PT Serif Regular';
+  font-size: 1em;
+  line-height: 2em;
+  color: #323232;
+}
+.map {
+  max-width: 137%;
+  height: 62%;
+  position: relative;
+  margin-left: -36px;
+  margin-top: -64px;
+  overflow: hidden;
+}
+.map img {
+  width: 150%;
+  height: 100%;
+  margin-left: -80px;
+  background-position: center;
+  background-image: url(images/kats-map.jpg);
+  background-attachment: fixed;
+}
+footer {
+  font-size: 1.25em;
+  font-family: 'PT Sans Narrow Bold', sans-serif;
+}
+h1 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.875em;
+  color: #323232;
+  text-align: center;
+}
+h2 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.5em;
+  color: #00897f;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 25px;
+}
+h3 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+  color: #323232;
+}
+h3 a {
+  text-decoration: none;
+}
+p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: .875em;
+  line-height: 1.75em;
+  color: #323232;
+}
+a {
+  font-family: 'PT Serif', serif;
+  font-size: 1em;
+  color: #f26522;
+}
+footer {
+  background-color: #00897f;
+  height: 125px;
+}
+footer h1 {
+  font-family: 'PT Sans Narrow Bold', sans-serif;
+  font-size: 1.25em;
+  color: #eeeeee;
+  text-align: center;
+}
+}
 
 /* On devices wider than 660px */
 @media(min-width: 660px) {
