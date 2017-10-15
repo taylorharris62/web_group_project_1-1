@@ -9,6 +9,9 @@ nav h1 {
   color: #323232;
   padding-top: 20px;
 }
+.end {
+  display: none;
+}
 .hero-container {
   max-width: 320px;
   height: auto;
@@ -44,9 +47,10 @@ nav h1 {
   left: 48%;
   transform: translate(-50%, -50%);
   font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 47px;
+  font-size: 45px;
   text-transform: uppercase;
   font-style: italic;
+  letter-spacing: 2px;
 }
 #hero-text2 {
   position: absolute;
@@ -65,7 +69,9 @@ nav h1 {
   margin-right: -72px;
   margin-top: -299px;
 }
-
+#splash {
+  display: none;
+}
 .main h1 {
   padding-top: 38px;
   margin-top: 0px;
@@ -79,14 +85,14 @@ nav h1 {
   font-family: 'PT Serif', serif;
 }
 
-.about {
+#about {
   background-color: #eeeeee;
   padding: 25px;
 }
-.about h2 {
+#about h2 {
   text-align: center;
 }
-.about p {
+#about p {
   font-family: 'PT Serif', serif;
   font-size: 1.0em;
   line-height: 1.75em;
@@ -94,11 +100,21 @@ nav h1 {
   margin-right: -4px;
   margin-left: 3px;
 }
-.cat3 img {
-  max-width: 250px;
-  border-radius: 180px;
-  margin: 37px;
 
+#cat1 {
+  display: none;
+}
+#cat2 {
+  display: none;
+}
+#cat3 {
+  border-radius: 180px;
+  width: 260px;
+  height: 260px;
+  margin: 37px;
+}
+.main .cat-titude, .main .about, .main .images, .main .contact {
+  margin-bottom: 20px;
 }
 
 .contact {
@@ -133,12 +149,13 @@ nav h1 {
   overflow: hidden;
 }
 .map img {
-  width: 150%;
-  height: 100%;
-  margin-left: -80px;
+  width: 229%;
+  height: 136%;
+  margin-left: -209px;
   background-position: center;
   background-image: url(images/kats-map.jpg);
   background-attachment: fixed;
+}
 }
 footer {
   font-size: 1.25em;
@@ -158,7 +175,7 @@ h2 {
   color: #00897f;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 25px;
+
 }
 h3 {
   font-family: 'PT Sans', sans-serif;
@@ -182,7 +199,7 @@ a {
 }
 footer {
   background-color: #00897f;
-  height: 125px;
+  height: 95px;
 }
 footer h1 {
   font-family: 'PT Sans Narrow Bold', sans-serif;
@@ -198,4 +215,221 @@ footer h1 {
 
 /* On devices wider than 940px */
 @media(min-width: 940px) {
+  body {
+    margin: 0;
+  }
+  nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+  }
+  .start h1 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.875em;
+    color: #323232;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+  .container .kat {
+    margin-right: 60px;
+  }
+  .container .about {
+    background-color: #eeeeee;
+    width: 260px;
+    padding: 30px;
+  }
+  .start {
+    width: 15%;
+    margin-left: 40px;
+    justify-content: flex-start;
+  }
+  .end {
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+    margin-right: 40px;
+    align-items: center;
+  }
+  .end a {
+    text-decoration: none;
+    color: #323232;
+    cursor: pointer;
+  }
+  .end a:active {
+    color: #323232;
+  }
+  .end p {
+    margin-left: 40px;
+    display: inline-block;
+    font-family: 'PT Sans', sans-serif;
+    font-size: .9em;
+    text-transform: uppercase;
+    color: #323232;
+  }
+  .hero-container {
+    width: 100%;
+    height: 400px;
+  }
+  .cat-titude h1 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.875em;
+    color: #323232;
+    text-align: center;
+    margin-top: 80px;
+  }
+  .cat-titude h3 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    color: #323232;
+  }
+  #splash {
+    background: url('../images/kats-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    max-width: 1440px;
+  }
+  .hero-text {
+    display: none;
+  }
+  #hero-text1 {
+    display: none;
+  }
+  #hero-text2 {
+    display: none;
+  }
+  #hero-cat {
+    display: none;
+  }
+  #mobile-splash {
+    display: none;
+  }
+  .main h1 {
+    margin-bottom: 45px;
+  }
+  .main h3 {
+    width: 40%;
+    margin: 0px auto;
+    padding-bottom: 80px;
+  }
+  .container {
+    width: 100%;
+    justify-content: center;
+  }
+  .container .kat {
+    margin-right: 60px;
+  }
+  .container .about {
+    background-color: #eeeeee;
+  }
+  .container .about h2 {
+    padding-bottom: 0px;
+  }
+.about h2 {
+  font-family: 'PT Sans Narrow', bold;
+  font-size: 1.5em;
+  color: #00897f;
+  text-transform: uppercase;
+  text-align: center;
+    }
+
+.about p {
+    font-family: 'PT Serif', serif;
+    font-size: 1.0em;
+    line-height: 1.75em;
+    color: #323232;
+    margin-right: -4px;
+    margin-left: 3px;
+}
+
+.images {
+  width: 100%;
+}
+
+.images .container {
+  display: flex;
+  width: 50%;
+  margin: 0px auto;
+  justify-content: space-evenly;
+}
+.images .container img {
+  border-radius: 180px;
+  width: 200px;
+  height: 200px;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-top: 80px;
+}
+  #cat1 {
+    display: flex;
+  }
+  #cat2 {
+    display: flex;
+  }
+  #cat3 {
+    border-radius: 180px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+  }
+  .contact {
+    background-color: #eeeeee;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    padding-top: 35px;
+    height: 500px;
+  }
+  .contact-main {
+    display: flex;
+    margin-left: 330px;
+    margin-right: 330px;
+  }
+  .hours {
+    background-color: #ffffff;
+    width: 300px;
+    height: 250px;
+    justify-content: flex-start;
+    padding: 30px;
+    margin-right: 60px;
+  }
+  .hours h3 {
+    width: 65%;
+  }
+  .info {
+    background-color: #ffffff;
+    width: 300px;
+    height: 250px;
+    justify-content: center;
+    padding: 30px;
+    justify-content: flex-end;
+  }
+  .info h3 {
+    width: 65%;
+  }
+  .contact1 h3 {
+    margin-top: -32px;
+    margin-right: 0px;
+    font-family: 'PT Serif Regular';
+    font-size: 1em;
+    line-height: 2em;
+    color: #323232;
+  }
+  .map {
+    background: url('../images/kats-map.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    max-width: 1440px;
+  }
+  .map img {
+    width: 100%;
+  }
+footer h1 {
+    padding-top: 32px;
+    margin: 0px;
+}
 }

@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Kat's Constume Shop</title>
+    <title>Kat's Costume Shop</title>
     <meta content="width=device-width,maximum-scale=1.0,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes" name="viewport">
 
     <link href='./assets/css/index.css' media='all' rel='stylesheet'>
@@ -12,12 +12,18 @@
 
   <body>
     <nav>
-      <h1>
-      Kat's Costume Shop
-    </h1>
+      <div class='start'>
+        <h1>Kat's Costume Shop</h1>
+      </div>
+      <div class='end'>
+        <p><a href='#about'>About</a></p>
+        <p><a href='#contact'>Contact</a></p>
+      </div>
     </nav>
+
     <div class="hero-container">
-        <img src="assets/images/kats-hero-mobile.jpg" alt="hero mobile">
+        <img src="assets/images/kats-hero.jpg" id='splash'>
+        <img src="assets/images/kats-hero-mobile.jpg" id="mobile-splash" alt="hero mobile">
       <div class="hero-text">Find The</div>
       <div id="hero-text1">Purrrrrrfect</div>
       <div id="hero-text2">Costume</div>
@@ -27,38 +33,49 @@
       <img src="assets/images/kats-hero2.png" id="hero-cat">
     </div>
     <div class='main'>
+      <div class='cat-titude'>
       <h1>Get Some Serious Cat-titude</h1>
       <h3>Kat's Costume Shop is your one stop shop to finding the
       best of the best cat costumes and apparel. We offer a wide
       variety of hats, sweaters, shirts, masks, sunglasses, onesies,
       capes, socks and booties. Custom orders are available upon
       request. Just stop by the store or call and ask for Mavis.</h3>
-
-    <div class="about">
+    </div>
+  <div id="about" class="container">
+    <div class="about kat">
       <h2>About Kat</h2>
       <p>Kat is the ultimate cat lady you've always dreamed you could
       be. Never has a Halloween gone by where her twelve cats weren't
       all dressed to impress. Five years ago, she decided to open
       Kat's Costume Shop to share her passion with the world.</p>
-
+    </div>
+    <div class="about mavis">
       <h2>About Mavis</h2>
       <p>Mavis has been designing custom clothes for her three
       cats since she was fifteen years old. She loves working on
       custom orders. Her cats are often roaming freely throughout
       the store and modeling the latest trends.</p>
     </div>
-    <div class="cat3">
-      <img src="assets/images/kats-cat3.jpg" alt="cat3">
+  </div>
+    <div class="images">
+      <div class="container">
+        <img src="assets/images/kats-cat1.jpg" id="cat1">
+        <img src="assets/images/kats-cat2.jpg" id="cat2">
+        <img src="assets/images/kats-cat3.jpg" id="cat3">
+      </div>
     </div>
     <div class="contact">
       <h1>Get In Touch</h1>
     <div class="contact-main">
+      <div class="hours">
       <h2>Business Hours</h2>
       <h3>
         Monday-Friday 11am - 8pm
         Saturday 11am - 4pm
         Sunday 12pm - 4pm
       </h3>
+    </div>
+    <div class="info">
       <h2>Contact Info</h2>
       <h3>
       Phone
@@ -70,6 +87,7 @@
       St. Louis, MO 63101</a>
     </h3>
     </h3>
+  </div>
   </div>
     </div>
   <div class="map">
