@@ -115,11 +115,13 @@ nav h1 {
 }
 .main .cat-titude, .main .about, .main .images, .main .contact {
   margin-bottom: 20px;
+  padding-bottom:70px;
 }
 
 .contact {
   background-color: #eeeeee;
   margin-top: 8px;
+  margin-bottom:40px;
 
 }
 
@@ -133,7 +135,7 @@ nav h1 {
 }
 .contact1 h3 {
   padding: -97px 39px 23px 42px;
-  margin-top: -32px;
+  margin-top: -2px;
   margin-right: -33px;
   font-family: 'PT Serif Regular';
   font-size: 1em;
@@ -200,6 +202,7 @@ a {
 footer {
   background-color: #00897f;
   height: 95px;
+  padding:10px;
 }
 footer h1 {
   font-family: 'PT Sans Narrow Bold', sans-serif;
@@ -314,7 +317,7 @@ footer h1 {
     margin-bottom: 45px;
   }
   .main h3 {
-    width: 44%;
+    width: 50%;
     margin: 0px auto;
   }
   .container {
@@ -380,7 +383,7 @@ footer h1 {
   .contact {
     background-color: #eeeeee;
     margin-top: 80px;
-    margin-bottom: 0px;
+    margin-bottom: -40px;
     padding-top: 35px;
     height: 500px;
   }
@@ -426,6 +429,7 @@ footer h1 {
     max-width: 1440px;
     background-repeat: no-repeat;
     margin-bottom: -4px;
+    margin-top:40px;
   }
   .map img {
     width: 100%;
